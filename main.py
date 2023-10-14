@@ -36,7 +36,7 @@ def main():
             # Scroll down to trigger lazy loading
             for _ in range(10):  # Adjust the number of scrolls as needed
                 driver.find_element(By.TAG_NAME, 'body').send_keys(Keys.PAGE_DOWN)
-                time.sleep(5)  # Wait for the page to load (adjust as needed)
+                time.sleep(3)  # Wait for the page to load (adjust as needed)
         except NoSuchElementException:
             print(f'Reached the last page: {page_number}')
             break
